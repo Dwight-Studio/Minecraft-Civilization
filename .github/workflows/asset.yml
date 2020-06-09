@@ -8,7 +8,7 @@ name: Create Asset Archive
 #  release:
 #    types: # This configuration does not affect the page_build event above
 #     - published
-on: release
+on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
