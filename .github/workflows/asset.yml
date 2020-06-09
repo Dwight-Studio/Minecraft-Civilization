@@ -21,12 +21,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@master
-    
-    - name: Get Release
-      id: get_release
-      uses: bruceadams/get-release@v1.2.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }} 
 
     # Runs a single command using the runners shell
     - name: Archive Release
@@ -41,7 +35,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
-        upload_url: ${{ steps.get_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        upload_url: https://uploads.github.com/repos/Dwight-Studio/Minecraft-Civilization/releases/latest/assets
         asset_path: ./release.zip
         asset_name: ressources.zip
         asset_content_type: application/zip
