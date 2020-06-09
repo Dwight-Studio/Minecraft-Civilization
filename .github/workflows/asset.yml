@@ -35,3 +35,4 @@ jobs:
       with:
         files: 'ressources.zip'
         repo-token: ${{ secrets.TOKEN }}
+        release-tag: latest
