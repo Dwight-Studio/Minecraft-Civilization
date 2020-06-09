@@ -8,7 +8,7 @@ name: Create Asset Archive
 #  release:
 #    types: # This configuration does not affect the page_build event above
 #     - published
-on: push
+on: release
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -35,4 +35,3 @@ jobs:
       with:
         files: 'ressources.zip'
         repo-token: ${{ secrets.TOKEN }}
-        release-tag: latest
