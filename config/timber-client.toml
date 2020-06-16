@@ -1,0 +1,8 @@
+
+#Client only settings
+[client]
+	# Timber Mod will disable itself if this value is set to false. Default: true.
+	activate_timber_mod = true
+	# Shows a text at your crosshair to inform you that you have Timber activated. Default: true.
+	visual_indicator = true
+

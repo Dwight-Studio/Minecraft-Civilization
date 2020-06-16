@@ -1,0 +1,8 @@
+
+#Server configuration settings
+[server]
+	# Timber Mod will drop items in creative mode aswell, true to enable, false to disable. Default: false.
+	drops_in_creative_mode = false
+	# Will damage the axe with the amount of logs chopped, true to enable, false to disable. Default: true.
+	damage_axe = true
+
